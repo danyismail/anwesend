@@ -2,6 +2,7 @@ const { pool } = require('../config')
 const {validationResult} = require('express-validator')
 
 
+
 class ModelEmployee {
     static GetEmployees = (request, response) => {
         pool.query('SELECT * FROM employees', (error, results) => {
